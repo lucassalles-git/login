@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+
+// Brand Colours
+$brand-color: #1e9e6a;
+$brand-color2:#F3FFF2;
+
+// Dark Scale
+$dark-10: #1a202c;
+$dark-20: #656769;
+$dark-30: #e8e8e8;
+$dark-40: #f7fafc;
+$dark-50: #ffffff;
+
+// Typography
+$archivo: "Archivo", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-family: $archivo;
+  font-size: 16px;
+}
+
+.image-container {
+  display: none;
+}
+
+.container-form {
+  width: clamp(20rem, 87.75vw, 25rem);
+  background-color: $dark-50;
+  display: flex;
+  flex-direction: column;
+
+  .titulo {
+    p {
+      margin-bottom: 0.5rem;
+
+      font-weight: 500;
+      font-size: clamp(1rem, 3vw, 1.25rem);
+    }
+
+    h1 {
+      font-size: clamp(1.5rem, 4vw, 2rem);
+      font-weight: 600;
+    }
+  }
+
+  form {
+    margin: 2.5rem 0 4rem 0;
+    display: flex;
+    flex-direction: column;
+
+    label[for="email"],
+    label[for="password"] {
+      font-size: clamp(0.875rem, 3vw, 1.125rem);
+    }
+
+    input {
+      border: 1px solid $dark-30;
+      background-color: $dark-40;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      margin-top: 0.75rem;
+      padding: 1rem;
+      border-radius: 0.25rem;
+
+      font-size: 1rem;
+    }
+
+    input[type="email"] {
+      margin-bottom: 2rem;
+    }
+
+    .lembrarRecuperar {
+      margin: 1.5rem 0 3.5rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      label[for="lembrar"], a {
+        font-size: clamp(0.875rem, 3vw, 1rem);
+      }
+
+      label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      input[type="checkbox"] {
+        appearance: none; //desativa estilo padrão
+        -webkit-appearance: none; //para navegadores Webkit
+
+        width: 1rem;
+        height: 1rem;
+        margin-right: 0.5rem;
+        border-radius: 50%;
+
+        cursor: pointer;
+
+        &:checked {
+          /*ao clicar*/
+          background-color: $brand-color;
+        }
+      }
+
+      a {
+        margin-left: 4.063rem;
+        text-decoration: none;
+        font-weight: 500;
+        color: $brand-color;
+      }
+    }
+
+    .container-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      button {
+        padding: 1rem;
+        width: 100%;
+        border: none;
+        border-radius: 0.25rem;
+
+        font-family: $archivo;
+        font-size: clamp(1rem, 3vw, 1.125rem);
+        font-weight: 600;
+      }
+
+      .entrar {
+        background-color: $brand-color;
+        color: $dark-50;
+      }
+
+      .google-login {
+        background-color: $dark-10;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+
+        color: $dark-50;
+
+        img {
+          width: clamp(1rem, 4.2vw, 1.5rem);
+          height: auto;
+        }
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+    text-align: center;
+    color: $dark-10;
+    font-weight: 500;
+    font-size: clamp(1rem, 3vw, 1.25rem);
+
+    span {
+      color: $brand-color;
+    }
+  }
+}

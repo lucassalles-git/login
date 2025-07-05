@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Archivo", sans-serif;
+  font-size: 16px;
+}
+
+.image-container {
+  display: none;
+}
+
+.container-form {
+  width: clamp(20rem, 87.75vw, 25rem);
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+.container-form .titulo p {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: clamp(1rem, 3vw, 1.25rem);
+}
+.container-form .titulo h1 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 600;
+}
+.container-form form {
+  margin: 2.5rem 0 4rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.container-form form label[for=email],
+.container-form form label[for=password] {
+  font-size: clamp(0.875rem, 3vw, 1.125rem);
+}
+.container-form form input {
+  border: 1px solid #e8e8e8;
+  background-color: #f7fafc;
+}
+.container-form form input[type=email],
+.container-form form input[type=password] {
+  margin-top: 0.75rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+.container-form form input[type=email] {
+  margin-bottom: 2rem;
+}
+.container-form form .lembrarRecuperar {
+  margin: 1.5rem 0 3.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-form form .lembrarRecuperar label[for=lembrar], .container-form form .lembrarRecuperar a {
+  font-size: clamp(0.875rem, 3vw, 1rem);
+}
+.container-form form .lembrarRecuperar label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-form form .lembrarRecuperar input[type=checkbox] {
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.container-form form .lembrarRecuperar input[type=checkbox]:checked {
+  /*ao clicar*/
+  background-color: #1e9e6a;
+}
+.container-form form .lembrarRecuperar a {
+  margin-left: 4.063rem;
+  text-decoration: none;
+  font-weight: 500;
+  color: #1e9e6a;
+}
+.container-form form .container-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.container-form form .container-buttons button {
+  padding: 1rem;
+  width: 100%;
+  border: none;
+  border-radius: 0.25rem;
+  font-family: "Archivo", sans-serif;
+  font-size: clamp(1rem, 3vw, 1.125rem);
+  font-weight: 600;
+}
+.container-form form .container-buttons .entrar {
+  background-color: #1e9e6a;
+  color: #ffffff;
+}
+.container-form form .container-buttons .google-login {
+  background-color: #1a202c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: #ffffff;
+}
+.container-form form .container-buttons .google-login img {
+  width: clamp(1rem, 4.2vw, 1.5rem);
+  height: auto;
+}
+.container-form a {
+  text-decoration: none;
+  text-align: center;
+  color: #1a202c;
+  font-weight: 500;
+  font-size: clamp(1rem, 3vw, 1.25rem);
+}
+.container-form a span {
+  color: #1e9e6a;
+}
+
+/*320px*/
+@media (max-width: 20rem) {
+  main {
+    padding: 2rem;
+  }
+}
+/*desktop*/
+@media (min-width: 64rem) {
+  body {
+    flex-direction: row;
+  }
+  .image-container {
+    display: block;
+    background-color: #F3FFF2;
+  }
+  .image-container, main {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=main.css.map */
