@@ -2,7 +2,7 @@
 
 ### Links
 
-- Site URL: [Site ativo](https://lucassalles-git.github.io/tech-blog/)
+- Site URL: [Site ativo](https://lucassalles-git.github.io/login/)
 
 ![](image/Screenshot_1.png)
 ![](image/Screenshot_2.png)
